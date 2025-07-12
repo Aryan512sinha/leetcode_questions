@@ -1,0 +1,20 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+        String s=x+"";
+        String n="";
+        int k=s.length()-1;
+        for(int i=k;i>=0;i--)
+        {
+            char l = s.charAt(i);
+            n=n+l;
+        }
+        if(s.equals(n))
+        {
+            return true;
+        }
+    return false;
+    }
+}
+
+        
+    
