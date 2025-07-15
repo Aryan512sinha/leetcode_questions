@@ -1,0 +1,18 @@
+class Solution {
+    public int reverse(int x) {
+        String s=x+"";
+        s = String.valueOf(Math.abs(x));
+        String n="";
+        for(int i=s.length()-1;i>=0;i--)
+        {
+            n=n+s.charAt(i);
+        }
+
+         try {
+            int result = Integer.parseInt(n);
+            return x < 0 ? -result : result;
+        } catch (NumberFormatException e) {
+            return 0;
+        }
+    }
+} 
